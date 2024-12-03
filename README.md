@@ -3,7 +3,7 @@ Berikut adalah file `README.md` untuk proyek **DoraFinder** berbasis PHP:
 ```markdown
 # Dora finder 
 
-Dora Finder adalah aplikasi berbasis PHP yang berfungsi untuk mencari informasi terkait nomor telepon tertentu, mirip dengan *PhoneInfoga*. Aplikasi ini memanfaatkan API pihak ketiga dan teknik Google Dork untuk pencarian lebih mendalam.
+Dora Finder adalah panduan untuk membuat aplikasi Phone Lookup berbasis PHP yang memanfaatkan API gratis untuk mendapatkan informasi terkait nomor telepon dan menambahkan fitur Google Dorking untuk mencari file dokumen berdasarkan nomor telepon.
 
 ---
 
@@ -24,63 +24,6 @@ Dora Finder adalah aplikasi berbasis PHP yang berfungsi untuk mencari informasi 
 - Composer untuk manajemen dependensi.
 - Web server (Apache atau Nginx).
 - (Opsional) MySQL/MariaDB untuk penyimpanan hasil lookup.
-
-### Libraries & Tools:
-- cURL atau Guzzle untuk pengelolaan API.
-- PHPMailer (opsional) untuk pengiriman laporan.
-- HTML/CSS/JS untuk antarmuka pengguna.
-
----
-
-## Instalasi
-1. **Clone Repository:**
-   ```bash
-   git clone https://github.com/username/phone-lookup.git
-   cd phone-lookup
-   ```
-
-2. **Install Dependencies:**
-   Pastikan Anda sudah menginstal Composer, lalu jalankan:
-   ```bash
-   composer install
-   ```
-
-3. **Konfigurasi:**
-   - Salin file konfigurasi:
-     ```bash
-     cp src/config.sample.php src/config.php
-     ```
-   - Isi file `src/config.php` dengan API Key dan endpoint API pihak ketiga.
-
-4. **Jalankan Server Lokal:**
-   ```bash
-   php -S localhost:8000 -t public
-   ```
-
-5. **Akses Aplikasi:**
-   Buka browser dan kunjungi `http://localhost:8000`.
-
----
-
-## Struktur Folder
-```
-/phone-lookup
-│
-├── /src
-│   ├── config.php        // Konfigurasi API dan pengaturan aplikasi
-│   ├── Lookup.php        // Logika utama untuk phone lookup
-│   ├── Utils.php         // Fungsi validasi dan utility lainnya
-│   └── ApiHandler.php    // Modul untuk mengelola API requests
-│
-├── /public
-│   ├── index.php         // Halaman input nomor telepon
-│   ├── result.php        // Halaman hasil lookup
-│   └── assets/           // File CSS, JS, dan gambar
-│
-├── /vendor               // Composer dependencies
-│
-└── composer.json         // Konfigurasi Composer
-```
 
 ---
 
@@ -110,18 +53,9 @@ Fitur tambahan yang dapat dikembangkan:
 - **Pencarian File:** Perluas pencarian Google Dork untuk mencakup lebih banyak ekstensi file.
 
 ---
+![Screenshot from 2024-12-03 14-37-57](https://github.com/user-attachments/assets/fc89fd81-f407-4338-b062-e118ebfa2690)
 
-## Kontribusi
-Kontribusi sangat diterima! Untuk mulai berkontribusi:
-1. Fork repository ini.
-2. Buat branch baru untuk fitur/bugfix Anda.
-3. Ajukan pull request ke repository utama.
-
----
-
-## Lisensi
-Aplikasi ini dirilis di bawah lisensi MIT. Silakan gunakan, modifikasi, dan distribusikan sesuai ketentuan lisensi.
-
+##
 ---
 
 ## Catatan
