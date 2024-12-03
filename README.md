@@ -52,12 +52,25 @@ Fitur tambahan yang dapat dikembangkan:
 - **Integrasi Database:** Simpan hasil lookup ke dalam database untuk keperluan analisis.
 - **Pencarian File:** Perluas pencarian Google Dork untuk mencakup lebih banyak ekstensi file.
 
----
-![Screenshot from 2024-12-03 14-37-57](https://github.com/user-attachments/assets/fc89fd81-f407-4338-b062-e118ebfa2690)
 
 ##
 ---
 
+Struktur Direktori
+Struktur folder aplikasi:
+
+
+/phone-lookup
+├── /src
+│   ├── config.php        // Konfigurasi API
+│   ├── Lookup.php        // Logika utama untuk API dan Dorking
+│   └── Utils.php         // Fungsi-fungsi utility
+├── /public
+│   ├── index.php         // Form input nomor telepon
+│   ├── result.php        // Halaman hasil
+│   └── assets/           // File CSS, JS, dan gambar
+├── composer.json         // Konfigurasi Composer (opsional)
+ 
 ## Catatan
 Gunakan aplikasi ini dengan bijak sesuai etika dan hukum yang berlaku. Hindari penyalahgunaan data pribadi yang ditemukan melalui aplikasi ini.
 ```
